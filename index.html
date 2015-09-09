@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    
+    
+    
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+<link rel='stylesheet prefetch' href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <body ng-app="myApp" >
+  <div class="container-fluid" ng-controller="WeatherCtlr" >
+
+    <div class="content">
+     
+      <section class="row detail">
+        <div class="col-md-12">
+      
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <h1 class="weather-main-icon" ><i class="{{ icon[weather.weather[0].icon]  }}"></i></h1>
+            <h2 class="weather-description">{{weather.weather[0].description}}</h2>
+          </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+            <h1 class="city-name"><i class="ion-ios-location-outline"></i> {{ weather.name }}, {{weather.sys.country}}</h1>
+            <h3 class="date-on">{{ date | date:'medium'}}</h1>
+          </div>
+        </div>
+        <!--col-md-12-->
+      </section>
+      <section class="row forcast">
+        <div class="col-md-12">
+          <div class="col-md-4 wether-item">
+            <h5 align="center">Temperature</h5>
+            <h1 class="icon-head"><i class="ion-ios-sunny-outline"></i></h1>
+            <h1 class="title-temp">{{weather.main.temp}}<sup>&deg;</sup>C</h1>
+          </div>
+          <!--col-md-3-->
+           <div class="col-md-4 wether-item">
+             <h5 align="center">Humidity</h5>
+            <h1 class="icon-head"><i class="ion-ios-cloudy-outline"></i></h1>
+             <h1 class="title-temp">{{weather.main.humidity}}%</h1>
+          </div>
+          <!--col-md-3-->
+          
+          <div class="col-md-4 wether-item">
+             <h5 align="center">Wind</h5>
+            <h1 class="icon-head"><i class="ion-ios-pulse"></i></h1>
+            <h1 class="title-temp">{{weather.wind.speed}}<sub>m/s</sub></h1>
+          </div>
+          <!--col-md-3-->
+         
+        </div>
+        <!--col-md-12-->
+        
+         <section class="row footer-bar">
+         <div class="col-md-12">
+           <p align="right" class="footer-note"><i class="ion-ios-heart-outline"></i> Created By Rahul Baruri</p>
+        </div>
+      </section>
+      </section>
+    </div>
+    <!--content-->
+  </div>
+</body>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>

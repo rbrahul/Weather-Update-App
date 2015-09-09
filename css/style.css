@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Roboto', sans-serif;
+}
+body{
+  font-size:14px;
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  background-color:#efefef;
+}
+h1.city-name{
+  text-align:right;
+  font-size:55px;
+  margin:0px;
+}
+h1>sub{
+  font-size:20px;
+}
+h3.date-on{
+  font-size:22px;
+  float:right;
+  margin:0;
+}
+.footer-bar{
+  color:#fff;
+  background-color:#1976D2;
+  padding-top:8px;
+   box-sizing:border-box;
+  position:fixed;
+  display:block;
+   bottom:0;
+  width:100%;
+}
+.detail{
+  background-color:#03A9F4;
+  color:#fff;
+  padding:20px;
+  min-height:200px;;
+}
+.wether-item:hover{
+  transition:.4s linear;
+  background-color:#f8f8f8;
+  border-bottom:1px solid #ccc;
+  border-radius:15px;
+}
+.wether-item:hover .icon-head{
+  color:#03A9F4;
+}
+.forcast{
+  padding-top:20px;
+  background-color:#efefef;
+  height:300px;
+}
+.wether-item{
+ 
+  width:33.33%;
+  float:left;
+  padding:10px;
+  box-sizing:border-box;
+}
+.wether-item h5{
+  margin-bottom:0px;
+}
+h1.title-temp{
+  font-size:45px;
+  text-align:center;
+  margin:0px;
+}
+h1.icon-head{
+  text-align:center;
+  font-size:70px;
+  margin:0px;
+}
+h1.weather-main-icon{
+  font-size:100px;
+  text-align:left;
+  margin:0px;
+  line-height:100%;
+}
+h2.weather-description{
+  margin:0px;
+  line-height:100%:
+}
+.footer-note{
+  font-size:12px;
+}
